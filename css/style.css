@@ -1,0 +1,64 @@
+.button-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    background: rgb(239, 233, 216);
+    font-family: Verdana;
+    padding: 0.6em 1.3em;
+    font-size: 18px;
+    border: 2.5px solid rgb(158, 99, 46);
+    border-radius: 5em;
+    box-shadow: 0.0em 0.2em rgb(158, 99, 46);
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    color: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+    .button {
+        width: 60%;
+        height: 8%;
+        font-size: 4vw;
+    }
+    .button-menu {
+        gap: 4vw;
+    }
+    body {
+        background-image: url("../img/background_mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh; /* Ensures it fills the screen height */
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        background-image: url("../img/background_desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh; /* Ensures it fills the screen height */
+    }
+}
+
+.button:hover {
+    transform: translate(-0em, -0.05em);
+    box-shadow: 0.0em 0.3em rgb(158, 99, 46);
+}
+
+.button:active {
+    transform: translate(0em, 0.05em);
+    box-shadow: 0em 0.05em rgb(158, 99, 46);
+}

@@ -5,6 +5,8 @@
     align-items: center;
     font-family: Verdana;
     font-size: 15px;
+    padding-top: 2%;
+    font-style: italic;
 }
 
 .logo {
@@ -42,10 +44,11 @@
 @media only screen and (max-width: 768px) {
     .title {
         font-size: 3vw;
+        font-style: italic;
     }
     .logo {
-        width: 30%;
-        height: 30%;
+        width: 60%;
+        height: 50%;
     }
     .button {
         width: 60%;
@@ -54,6 +57,7 @@
     }
     .button-menu {
         gap: 4vw;
+        padding-top: 4%;
     }
     body {
         background-image: url("../img/background_mobile.jpg");

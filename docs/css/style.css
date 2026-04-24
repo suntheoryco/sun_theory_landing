@@ -7,6 +7,11 @@
     font-size: 15px;
 }
 
+.logo {
+    width: 30%;
+    height: 30%;
+}
+
 .button-menu {
     padding-top: 2%;
     display: flex;
@@ -37,8 +42,10 @@
 @media only screen and (max-width: 768px) {
     .title {
         font-size: 3vw;
+    }
+    .logo {
         width: 70%;
-        height: 10%;
+        height: 20%;
     }
     .button {
         width: 60%;
